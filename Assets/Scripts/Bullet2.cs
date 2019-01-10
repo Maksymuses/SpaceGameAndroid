@@ -31,7 +31,7 @@ public class Bullet2 : MonoBehaviour {
                 Destroy(gameObject);
             }
         }
-        if (other.tag == "Enemy")
+        if (other.tag == "Enemy" || other.tag == "Enemy5")
         {
             if (other.GetComponent<EnemyManager>() != null)
             {
@@ -54,6 +54,24 @@ public class Bullet2 : MonoBehaviour {
             if (other.GetComponent<EnemyManager3>() != null)
             {
                 other.GetComponent<EnemyManager3>().TakeDamageEnemy(2);
+                if (BulletEffect != null)
+                {
+                    Instantiate(BulletEffect, transform.position, transform.rotation);
+                }
+                Destroy(gameObject);
+            }
+            if (other.GetComponent<EnemyManager4>() != null)
+            {
+                other.GetComponent<EnemyManager4>().TakeDamageEnemy(2);
+                if (BulletEffect != null)
+                {
+                    Instantiate(BulletEffect, transform.position, transform.rotation);
+                }
+                Destroy(gameObject);
+            }
+            if (other.GetComponent<EnemyManager5>() != null)
+            {
+                other.GetComponent<EnemyManager5>().TakeDamageEnemy(2);
                 if (BulletEffect != null)
                 {
                     Instantiate(BulletEffect, transform.position, transform.rotation);
