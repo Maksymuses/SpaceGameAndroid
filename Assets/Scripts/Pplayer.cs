@@ -80,6 +80,9 @@ public class Pplayer : MonoBehaviour
             case "EnemyBullet":
                 Death();
                 break;
+            case "Enemy5":
+                Death();
+                break;
             case "ImmortalityBonus":
                 Immortality();
                 break;
