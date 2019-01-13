@@ -9,7 +9,7 @@ public class EnemyBullet2Left : MonoBehaviour {
     {
         myRigidbody2D = GetComponent<Rigidbody2D>();
         myRigidbody2D.AddRelativeForce(Vector2.down * moveSpeed, ForceMode2D.Impulse);
-        myRigidbody2D.AddRelativeForce(Vector2.left * moveSpeed/2, ForceMode2D.Impulse);
+        myRigidbody2D.AddRelativeForce(Vector2.left * moveSpeed/2f, ForceMode2D.Impulse);
     }
     void Update()
     {

@@ -52,6 +52,16 @@ public class Bullet : MonoBehaviour {
                 other.GetComponent<EnemyManager5>().TakeDamageEnemy(1);
                 Destroy(gameObject);
             }
+            if (other.GetComponent<BossManager1>() != null)
+            {
+                other.GetComponent<BossManager1>().TakeDamageEnemy(1);
+                Destroy(gameObject);
+            }
+            if (other.GetComponent<AssistantsManager1>() != null)
+            {
+                other.GetComponent<AssistantsManager1>().TakeDamageEnemy(1);
+                Destroy(gameObject);
+            }
         }
     }
 }

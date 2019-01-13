@@ -6,6 +6,6 @@ public class Ship3 : MonoBehaviour {
     void OnMouseDown()
     {
         ship3 = true;
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("ChooseGame");
     }
 }

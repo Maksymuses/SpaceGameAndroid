@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class EnemyBullet2 : MonoBehaviour {
+public class BossBullet1 : MonoBehaviour {
 
     Rigidbody2D myRigidbody2D;
     public float moveSpeed;
@@ -9,7 +9,6 @@ public class EnemyBullet2 : MonoBehaviour {
     {
         myRigidbody2D = GetComponent<Rigidbody2D>();
         myRigidbody2D.AddRelativeForce(Vector2.down * moveSpeed, ForceMode2D.Impulse);
-        myRigidbody2D.AddRelativeForce(Vector2.right * moveSpeed/2f, ForceMode2D.Impulse);
     }
     void Update()
     {

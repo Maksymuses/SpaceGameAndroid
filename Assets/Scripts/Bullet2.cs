@@ -78,6 +78,24 @@ public class Bullet2 : MonoBehaviour {
                 }
                 Destroy(gameObject);
             }
+            if (other.GetComponent<BossManager1>() != null)
+            {
+                other.GetComponent<BossManager1>().TakeDamageEnemy(2);
+                if (BulletEffect != null)
+                {
+                    Instantiate(BulletEffect, transform.position, transform.rotation);
+                }
+                Destroy(gameObject);
+            }
+            if (other.GetComponent<AssistantsManager1>() != null)
+            {
+                other.GetComponent<AssistantsManager1>().TakeDamageEnemy(2);
+                if (BulletEffect != null)
+                {
+                    Instantiate(BulletEffect, transform.position, transform.rotation);
+                }
+                Destroy(gameObject);
+            }
         }
     }
 }
