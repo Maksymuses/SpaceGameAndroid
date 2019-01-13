@@ -12,7 +12,7 @@ public class SpawnScore : MonoBehaviour {
 
     IEnumerator Spawn()
     {
-        while (!Pplayer.lose)
+        while (!Pplayer.lose && BossManager1.boss1Alive)
         {
             Instantiate(scoreObject, new Vector2(0, 5.5f), Quaternion.identity);
             yield return new WaitForSeconds(0.5f);

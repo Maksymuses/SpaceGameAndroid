@@ -19,6 +19,7 @@ public class Pplayer : MonoBehaviour
 
     public GameObject restart;
     public GameObject QuitGame;
+    public GameObject MainMenu;
     public static bool lose = false;
 
     public static bool immortal = false;
@@ -165,6 +166,7 @@ public class Pplayer : MonoBehaviour
             Destroy(gameObject);
             restart.SetActive(true);
             QuitGame.SetActive(true);
+            MainMenu.SetActive(true);
         }
     }
 
